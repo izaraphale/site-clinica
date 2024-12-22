@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--responsividade-->
+    <title>Clínica Evolution</title>
+    <link rel="shortcut icon" href="default-page/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+   <!--texto-base2-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css"/> <!--site: https://lineicons.com/-->
+</head>
+<body>
+<!--CABEÇALHO-->
+    <header>
+    <!-- Menu de navegação -->
+        <nav class="font-menu">
+            <ul>
+                <a href="index.html"> <img src="default-page/logo.jpg" class="imglogo" alt="logo da clínica. tem escrito 'evolution' em azul escuro com duas mãos segurando um cérebro substituindo a letra l. abaixo está escrito espaço psicopedagógico e Pedagógica"/></a> <!--logo do site-->
+                <li><a href="index.html">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="sobre_nos.html">Sobre Nós</a></li>
+                    <!-- <ul> MENU DROPDOWN FUTURO
+                        <li><a href="sobre_nos.html">A clínica</a></li>
+                        <li><a href="sobre_nos.html">Equipe</a></li>
+                        <li><a href="sobre_nos.html">Depoimentos</a></li>
+                    </ul> -->
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="inscricao_oficina.html">Inscrição na Oficina</a></li>
+                <!--            
+                <div id="divBusca"> FUTURA BARRA DE PESQUISA NO SITE
+                    <img src="default-page/search.png" width="20px" id="btnBusca" alt="Buscar"/>
+                    <input type="text" id="txtBusca" placeholder="Pesquisar no site"/>
+                </div>-->
+            </ul>
+        </nav> 
+    </header>
+    <!-- Conteúdo principal do site -->
+    <div class="maintitlepage"> 
+        <a href="index.html" class="backbutton"><i class="fa-solid fa-arrow-left"></i></a>
+        <h1 class="white centralize">Contato</h1>
+    </div>
+    <main>
+        <section class="container-grid-contato">
+            <div class="item-grid-contato1">
+                <h2>Canais de atendimento</h2>
+            </div>
+            <div class="item-grid-contato2">
+                <a target="_blank" href="web.whatsapp.com" style="font-size: 40px;">
+                    <i class="fa-brands fa-square-whatsapp"></i>
+                    <p class="black">Whatsapp: 16 9 9825-5487</p>
+                </a>
+                <br>
+                <br>
+                <br>
+                <a target="_blank" href="#" style="font-size: 40px;">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                    <p class="black">Messenger</p>
+                </a>
+                
+            </div> <!-- FORMULÁRIO-->
+            <div class="item-grid-contato3">
+                <h2> Envie uma mensagem:</h2>
+                <form class="formulario" action=""> <!-- #recurso: método de envio ao servidor-->
+                    <input type="hidden" id="inputOculto" name="inputOculto"> <!-- registro do banco de dados -->
+                    
+                    <label for="name_r">Nome:</label>
+                    <input name="nome_r" placeholder="Nome Completo" required>
+                    
+                    <label for="telefone">Contato:</label>
+                    <input type="telefone" name="telefone" placeholder="Celular ou telefone" required>
+
+                    <label for="e-mail">E-mail:</label>
+                    <input type="email" name="e-mail" placeholder="Digite seu e-mail" required>
+
+                    <label for="motivo"> Motivo</label>
+                        <select name="motivo" id="motivo">
+                            <option value="duvida">Dúvida</option>
+                            <option value="reclamacao">Reclamação</option>
+                            <option value="sugestao">Sugestões</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    <br>
+                    <label>Mensagem</label>
+                    <textarea class="textarea" placeholder="Escreva sua mensagem aqui..." name="msg"></textarea>
+                    
+                <div class="centralize">
+                                    <input class="btn" type="reset">
+                <!--Botão que Inicia um script (Javascript)***
+                <input type="button" value="Enviar JS" onclick="msg()">-->
+                <input class="btn" type="submit" name="enviar" value="Enviar">
+                </div>
+
+                </form>
+            </div>
+            <div class="item-grid-contato4">
+                <h2>Venha nos visitar</h2>
+            </div>
+            
+            <div class="item-grid-contato5">
+                <p>R. Vinte e Quatro de Outubro, 147</p>
+                <p>Centro, Taquaritinga - SP, 15900-003</p>
+                <br>
+                <img src="" alt="">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.471660824061!2d-48.51229592473297!3d-21.410698280335943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b939886213f917%3A0xacfc0b0f648b72cf!2sEvolution%20Espa%C3%A7o%20Pedag%C3%B3gico%20e%20Psicopedag%C3%B3gico!5e0!3m2!1spt-BR!2sbr!4v1733837793498!5m2!1spt-BR!2sbr" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="item-grid-contato6">
+                <h2>Horário de Funcionamento da Clínica</h2>
+                <p>Segunda a Sexta: 12h-18h</p>
+                <p>Domingo e Sábado: fechado</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+
+            <div  class="container-footer" style="background-color: #0e3a73; color: white;"> <!-- tirar isso dps ou padronizar-->
+
+                <div class="divfooter" style="font-size: 18px;">
+                    <h2 class="white">Acesso Rápido</h2>
+                        <a class="teste" href="contato.html" class="white">Contato</a></li> <br>
+                        <a href="inscricao_oficina.html" class="white">Inscrição na Oficina</a></li><br>
+                        <a href="sobre_nos.html" class="white">Sobre Nós</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="divfooter">
+                    <h2 class="white">Siga-nos nas redes sociais</h2>
+                    <div class="divsocialicons">
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100063547234074" class="icons"><i class="fa-brands fa-square-facebook"></i></a>
+    
+                        <a target="_blank" href="https://www.instagram.com/explore/locations/100771381650318/evolution-espaco-pedagogico-e-psicopedagogico/" class="icons"><i class="fa-brands fa-square-instagram" alt="botão para o site do instagram"></i></a>
+                
+                        <a target="_blank" href="web.whatsapp.com" class="icons"><i class="fa-brands fa-square-whatsapp"></i></a>
+                            <!--<a target="_blank" href="tiktok.com"><i class="lni lni-tiktok-alt" style="color:white; font-size: 42px; padding-top: 15px;"></i></a> -->
+                    </div>
+                </div>
+
+                <div class="divfooter">
+                    <h2 class="white">Local</h2>
+                    <p>R. Vinte e Quatro de Outubro, 147 - Centro, Taquaritinga - SP, 15900-003</p>
+                    <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.471660824061!2d-48.51229592473297!3d-21.410698280335943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b939886213f917%3A0xacfc0b0f648b72cf!2sEvolution%20Espa%C3%A7o%20Pedag%C3%B3gico%20e%20Psicopedag%C3%B3gico!5e0!3m2!1spt-BR!2sbr!4v1733837793498!5m2!1spt-BR!2sbr" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+        </section>
+        <section><!--FINAL-->
+            <div>
+                <p class="credits">PROJETO-001 © 2024 todos os direitos reservados.</p>
+                <p class="credits">Site criado por Isadora Bombarda para Curso Descodificadas.</p>
+            </div>
+        </section>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+/*------------------------- RESPONSIVIDADE-----------------------*/
+*{margin: 0; padding: 0;}
+
+
+@media (max-width: 450px) {
+
+}
+
+/*------------------PERSONALIZAÇÃO COMUNS EM TODAS AS PAGINAS ------------------*/
+body {
+        font-family: "Lora", serif;
+        font-size: 15px;
+        font-weight: 500;
+}
+        
+a {
+        text-decoration: none;
+        color: #031e44;
+}
+
+
+p {
+        font-family: "Lora", serif;
+        font-size: 20px;
+        font-weight:500;
+}
+
+h1 {
+        color: #0e3a73;
+        font-size: 30px;
+        font-family: Lora;
+        text-align: center;
+        font-weight: 800;
+}
+
+h2{
+        color: #0e3a73;
+        font-size: 26px;
+        font-family: Lora;
+        font-weight: 800;
+        padding: 30px 0px 15px 0px;
+}
+
+h3{
+        color: #0e3a73;
+        font-size: 16px;
+        font-family: Lora;
+        text-align: center;
+        font-weight: 800;
+}
+
+/*
+div {
+        border: dotted rgb(249, 0, 0) 2px;
+}*/
+
+.divpattern{
+       border: #0e3a73;
+       border-radius: 5px; 
+}
+
+main{
+        padding-top:15px;
+}
+
+.divtitle{
+        justify-content: center;
+        vertical-align: center;
+        margin-top: 20px;
+}
+
+.backbutton{
+        float: left;
+        color: white;
+        padding: 2px 0px 0px 2px;
+}
+
+/*---------------------PEQUENAS PRÉ-DEFINIÇÕES---------------------*/
+.centralize{
+        text-align: center;
+}
+
+.white{
+        color: white;
+}
+
+.blue{
+        color: #0e3a73;
+}
+
+.black{
+        color:black;
+}
+
+.justify{
+        align-items: center;
+}
+
+.right{
+        float: right;
+}
+
+.paragrafo-destaque{
+        font-family: "Lora", serif;
+        font-size: 20px;
+        font-weight: 500;
+}
+
+.quote{
+        text-align: left;
+        border-left: solid 10px white;
+        font-size: 35px;
+        align-self: center;
+}
+
+.banner{
+        background-color:#0e3a73;
+        color: rgb(255, 255, 255);
+        padding: 30px;
+    }
+
+.banner2{
+        background-color:white;
+        padding: 30px;
+}
+
+.maintitlepage{
+        text-align: center;
+        padding: 30px;
+        background-color: #0e3a73;
+        margin-top: 95px;
+}
+
+.p-grande{
+        font-size: 25px;
+}
+
+/*-------------------- MENU DE NAVEGAÇÃO HORIZONTAL ---------------------*/
+
+.imglogo{
+        object-fit: cover;
+        width: 130px; 
+        height: 90px;
+        margin-left: 15px ;
+}
+
+nav {
+        background-color: white;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        /*font-config*/
+        font-family: "Lexend", serif;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight:500;
+        /*note: futuramente criar condição para telas desktop*/
+}
+
+ul {
+        display: flex;
+        list-style: none;
+        font-family: lexend;
+        text-transform: uppercase;
+}
+
+
+li{
+        display: inline;
+      }
+
+li a {
+        text-decoration: none;
+        display: block;
+        color: #0e3a73;
+        text-align: center;
+        padding: 35px 20px;
+      }
+
+li a:hover {
+        background-color:#0e3a73;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+}
+
+/*responsividade do menu
+@media (max-width: 768px) {
+        nav ul {
+            flex-direction: row;
+        }
+    
+        nav li {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }*/
+
+/*------------------- PÁGINA INICIAL------------------ */
+.container-apresentacao{
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap; /*Coloca o conteúdo em coluna e não permite a quebra de linha.*/
+        margin: 150px 0px 90px 0px;
+}
+
+.imgapresentacao{
+        width: 150px;
+        display: block; /*nova linha. ocupa largura total disponível por padrão. elementos serão empurrados para baixo ou para cima para abrir espaço para ele.*/
+        margin: 0 auto;
+}
+
+.fonte-apresentacao{
+        color:#0e3a73; 
+        font-size: 40px; 
+        text-transform: uppercase;
+}
+
+.fonte-apresentacao2{
+       font-family: Lexend; 
+       font-size: 20px; 
+       text-transform: uppercase;
+       color: black;
+       text-align: center;
+}
+
+.testeposition{
+        position: relative;
+}
+
+/*serviços*/
+
+.lado-a-lado{
+        display: inline-flex;
+}
+
+.container-serv{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        gap: 30px;
+        height: 600px;
+        padding: 30px;
+      }
+
+.divservicos{
+        text-align: center;
+        width: 203px;
+        height: 230px;
+        border: solid #ffffff 2px;
+        background-color: #f5f5f5;
+        border-radius: 20px;
+}
+
+.divservicos:hover{
+        border: solid #0e3a73 2px;
+}
+
+.imgservicos{
+        width: 200px; 
+        height: 150px;
+        object-fit: cover; 
+        object-position: 100% 0;
+        border-radius: 15px;
+}
+
+.botao{
+        padding: 10px 50px 10px 50px;
+        border: 0px #0e3a73 solid;
+        border-radius: 10px;
+        background-color: #0e3a73;
+        text-decoration: none;
+        margin-top: 20px;
+}
+
+.botao:hover {
+        background-color: #1657ac
+}
+
+/*---------------------DIVs e associados---------------------*/
+
+
+.flex-direction{
+        flex-direction:row;
+}
+
+
+/*FOOTER*/
+.icons{
+        color: white;
+        font-size: 35px
+}
+
+.container-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; /*alinhamento do conteúdo dentro do container*/
+}
+
+.divfooter{
+        max-height: 400px;
+        max-width: 350px;
+        min-width: 290;
+        padding: 10px;
+}
+
+.divsocialicons{
+        margin: 5px;
+        width: fit-content;
+}
+
+footer{
+        margin-top: 20px;
+}
+
+footer a{
+        color: white;
+}
+
+footer a:hover{
+        text-decoration:underline;
+}
+
+.credits{
+        font-size: 12px;
+        color: #000000;
+        text-align: center;
+}
+
+/*---------------- pag.contato ---------- */
+
+.container-grid-contato {
+        display: grid;
+        gap: 10px;
+        margin: 50px 15px 50px 15px;
+    }
+    
+.item-grid-contato1 {
+        grid-column: span 2;
+        text-align: center;
+}
+
+.item-grid-contato2 { /*wpp*/
+        grid-column: span 1;
+        text-align: center;
+        border: solid 3px #0e3a73;
+        border-radius: 20px;
+        padding-top: 80px;
+
+}
+
+.item-grid-contato3 {
+        grid-column: span 1;
+        border: solid 3px #0e3a73;
+        border-radius: 20px;
+        padding: 20px 0px 30px 30px;
+}
+
+.item-grid-contato4 {
+        grid-column: span 2;
+        text-align: center;
+
+}
+
+.item-grid-contato5 {
+        grid-column: span 1;
+        text-align: center;
+        border: solid 3px #0e3a73;
+        border-radius: 10px;
+        border-radius: 20px;
+        border: solid 3px #0e3a73;
+        padding: 30px 10px 30px 10px;
+}
+
+.item-grid-contato6 {
+        grid-column: span 1;
+        text-align: center;
+        border: solid 3px #0e3a73;
+        border-radius: 20px;
+        padding-top: 18%;
+}
+
+.formulario{
+        font-size: 20px;
+}
+
+.formulario-oficina{
+        border: solid 3px #0e3a73;
+        border-radius: 20px;
+        margin: 60px;
+        padding: 60px;
+}
+
+label {
+  font-size: 15px;
+  color: #031e44;
+}
+
+input, textarea {
+        font-family: "Lora", serif;
+        font-size: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 2px 0px 10px 0px;
+      }
+
+textarea {
+        /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+        display: block;
+        /* Para dar espaço suficiente para digitar algum texto */
+        height: 10em;
+        width: 90%;
+        /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+        resize: vertical;
+      }
+
+input{
+        display: block;
+        width: 80%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        padding: 5px;
+        color: #767676;
+        margin: 10px 0px 10px 0px;
+}
+
+input[type=text], select {
+        display: block;
+        padding: 5px 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-family: "Lora", serif;
+        color: #575757;
+      }
+
+input[type=date]{
+        width: 15%;
+        margin: 10;
+}
+
+input[type=telefone] {
+        width: 20%;
+}
+
+.btn {
+        /* Para posicionar os botões para a mesma posição dos campos de texto */
+        display: inline;
+        width: 100px;
+        padding: 10px;
+        color:#ffffff;
+        background-color: #0e3a73;
+        border: none;
+        text-transform: uppercase;
+        font-weight: 800;
+      }
+
+input[type=submit]:hover {
+        background-color: #031e44;
+        }
+
+input[type=reset]:hover {
+        background-color: #031e44;
+        }
+
+/*----------PAG.SERVIÇOS----------*/
+
+.servicos{
+        border: solid 1px #0e3a73;
+        margin: 50px;
+        border-radius: 10px;
+        padding: 20px;
+}
+
+/*------------------- PAG. INSCRIÇÃO --------------------*/
+
+.divinscricao{
+        border: solid 3px #0e3a73;
+        border-radius: 15px;
+        margin: 25px;
+        padding: 20px 20px 60px 20px;
+}
+
+fieldset{
+        padding: 30px;
+        margin: 10px;
+}
+
+.field_set{
+        border-color: #0e3a73;
+        border-style: solid 2px ;
+      }
+
+.teste{
+        display: inline-flex;
+        margin: 0;
+        padding: 0;
+        float: left;
+}
+
+.imgfundo{
+        background: linear-gradient(#0e3a73, #0e3a73d0), url(https://updateordie.com/wp-content/uploads/2024/06/HO00002989.webp);
+        border: #0e3a73;
+}
+
+/*---------pag.noticias--------*/
+.divarticle{
+        border: solid black 2px;
+        margin: 30px;
+        padding: 30px;
+        display: block;
+}
+
+.video-noticias{
+        padding: 30px 0px 30px 0px;
+}
+
+/*--------- pag.sobre nos--------*/
+
+/*menu-sobre-nos*/
+.div-submenu-sobre{
+        text-align: center;
+        position: sticky;
+        top: 90px;
+}
+
+.ul-sobrenos{
+        background-color: #0a2951;
+}
+
+.li-sobrenos{
+        color: rgb(255, 255, 255);
+}
+
+.div-sobre-nos{
+        margin: 40px;
+        padding: 40px;
+}
+
+/*descricao*/
+
+.container-descricao{
+        display: inline;
+}
+
+.item-descricao{
+        width: 20%;
+}
+
+.grid-sobre-nos{
+        grid-template-rows: 2fr 2fr;
+}
+
+.container-grid-sobre {
+        display: grid;
+        gap: 1px;
+        margin: 50px 80px 50px 80px;
+    }
+    
+.item-grid-sobre1 {
+        grid-column: span 2;
+        text-align: left;
+        padding: 10px 20px 100px 20px;
+        text-align: justify;
+}
+
+.item-grid-sobre2 {
+        grid-column: span 1;
+        background-image: url(about-us-stuff/clinica.jpg);
+        background-repeat: no-repeat;
+        background-size: 120%;
+        background-position: center;
+}
+
+
+.item-grid-sobre3 {
+        grid-column: span 1;
+        text-align: center;
+        padding: 30px;
+}
+
+/*equipe*/
+.container-grid-equipe{
+        display: grid;
+        padding: 90px;
+}
+/*---------------------------------------------------------*/
+.item-grid-titulo{ /*espacamento*/
+        grid-column: span 2;
+        text-align: center;
+        padding-bottom: 60px;
+}
+
+.item-grid-espacamento{ /*espacamento*/
+        grid-column: span 2;
+        text-align: center;
+        height: 200px;
+}
+
+.item-grid-foto{ /*foto*/
+        grid-column: span 1;
+        width: 300px;
+        height: 300px;
+}
+
+.item-grid-desc{ /*descricao da profissional*/
+        grid-column: span 1;
+        grid-row: span 2;
+        padding: 150px 100px 0px 100px;
+        text-align: justify;
+}
+
+.item-grid-legenda{ /*descricao da foto*/
+        grid-column: span 1;
+}
